@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        Rinvex\Repository\Providers\RepositoryServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -176,6 +177,14 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /*
+        * Business Logic Service Providers...
+        */
+        App\Services\UserManagement\UserManagementServiceProvide::class,
+        App\Repositories\User\UserRepositoryServiceProvider::class
+
+
 
     ],
 

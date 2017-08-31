@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('shared.adminLTE');
+    return view('layouts.dashboard');
 });
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
